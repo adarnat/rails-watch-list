@@ -11,3 +11,62 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  height: 400px;
+  background-image: url("https://london.frenchmorning.com/wp-content/uploads/sites/10/2018/09/cine%CC%81ma.jpg");
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+h2 {
+  color: white;
+}
+
+.classic {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  height: 400px;
+  background-image: url("http://www.slate.fr/sites/default/files/styles/1060x523/public/casa2.jpg");
+}
+
+.buton {
+  padding: 10px;
+  margin-left: 875px;
+}
+
+
+.card-title{
+  text-align: center;
+  font-weight: 700;
+}
+
+.card {
+  padding: 10px;
+  width: 400px;
+}
+
+a {
+  text-align: right;
+}
+
+h5 {
+  padding: 7px;
+}

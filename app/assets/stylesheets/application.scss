@@ -63,8 +63,14 @@ h2 {
   width: 400px;
 }
 
-a {
+a .navbar1 {
   text-align: right;
+  background-color: white;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3px;
+  width: 120px;
+  text-align: center;
 }
 
 h5 {
@@ -87,4 +93,19 @@ h5 {
   background-size: cover;
   background-image: url("https://lecafedufle.fr/wp-content/uploads/2013/02/theatre-fle-1.jpg");
   image-rendering: grayscale(80%);
+}
+
+li.nav-item{
+  display: flex;
+  justify-content: flex-between;
+}
+
+.navbar-collapse {
+    /* flex-basis: 100%; */
+    flex-grow: 1;
+    align-items: center;
+}
+
+.navbar1 {
+    text-align: right;
 }

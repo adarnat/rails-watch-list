@@ -14,10 +14,16 @@
       <div>
         <%= link_to list_path(list) do %>
             <%= list.name %>
-            <img class="card-img-top" src="https://lecafedufle.fr/wp-content/uploads/2013/02/theatre-fle-1.jpg">
+            <% if list.photo.attached? %>
+              <%= cl_image_tag list.photo.key, class:"card-img-top"  %>
+            <% else %>
+              <img class="card-img-top" src="https://lecafedufle.fr/wp-content/uploads/2013/02/theatre-fle-1.jpg">
+            <% end %>
           </div>
         <% end %>
+        <%= link_to 'Destroy', list, method: :delete, data: { confirm: 'Are you sure?' } %>
       </div>
     <% end %>
+
   </div>
 </div>

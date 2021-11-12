@@ -70,3 +70,21 @@ a {
 h5 {
   padding: 7px;
 }
+
+.container1 {
+  width: 600px;
+  background-color: white;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+  top: 150px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px 1px rgba(255, 255, 255, 0.5);
+}
+
+.fond{
+  height: 1000px;
+  background-size: cover;
+  background-image: url("https://lecafedufle.fr/wp-content/uploads/2013/02/theatre-fle-1.jpg");
+  image-rendering: grayscale(80%);
+}

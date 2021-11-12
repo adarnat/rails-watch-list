@@ -1,8 +1,11 @@
+    <div class="banner2" >
   <div class="classic" class="text-center text-white">
-    <h1  class="text-center text-white"><%= @list.name %></h1>
     <h3 class="typed-js"></h3>
-  </div>
+    <%# <%= cl_image_tag @list.photo.key, class:"cardimg"  %>
+    <h1><%= @list.name %></h1>
+ </div>
 
+</div>
 
 <body>
 <div class="container">
@@ -12,7 +15,7 @@
   <div class="row justify-content-around">
     <% @list.bookmarks.each do |bookmark| %>
   <div class="card" class="col-4" style="width: 22rem;" >
-      <img class="card-img-top" src="<%= bookmark.movie.poster_url %>">
+      <img class="card-category" src="<%= bookmark.movie.poster_url %>">
         <h5 class="card-title text-align-center"><%= bookmark.movie.title %></h5>
         <p class="card-text">Rating:<%= bookmark.movie.rating %>/10</p>
         <p class="card-text">Comment: <%= bookmark.comment %></p>
@@ -24,6 +27,3 @@
   </div>
 </div>
 </body>
-
-
-<%= link_to 'Home', lists_path %>

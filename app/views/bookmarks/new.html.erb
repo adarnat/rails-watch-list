@@ -1,11 +1,12 @@
-<div class="fond">
+<div class="fond2">
   <div>
-    <div class="container1">
+    <div class="container2">
     <h3>Add a movie to your list</h3>
     <%= simple_form_for [@list, @bookmark] do |f| %>
       <%= f.input :comment, placeholder: 'Enter a comment about the movie' %>
       <%= f.association :movie %>
       <%= f.submit class: 'btn btn-primary' %>
     <% end %>
+    </div>
     </div>
 </div>

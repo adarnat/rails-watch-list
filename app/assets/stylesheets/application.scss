@@ -12,20 +12,22 @@
 @import "components/index";
 @import "pages/index";
 
+
 .banner {
   background-size: cover;
   background-position: center;
   padding: 150px 0;
   height: 400px;
-  background-image: url("https://london.frenchmorning.com/wp-content/uploads/sites/10/2018/09/cine%CC%81ma.jpg");
+  background-image: url("https://www.lambesc.fr/fileadmin/user_upload/cinema.jpg");
 }
 
 .banner h1 {
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
+  font-size: 80px;
   font-weight: bold;
+  text-shadow: 1px 1px 2px grey;
 }
 
 .banner p {
@@ -37,6 +39,7 @@
 
 h2 {
   color: white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 .classic {
@@ -44,7 +47,7 @@ h2 {
   background-position: center;
   padding: 150px 0;
   height: 400px;
-  background-image: url("http://www.slate.fr/sites/default/files/styles/1060x523/public/casa2.jpg");
+
 }
 
 .buton {
@@ -63,15 +66,6 @@ h2 {
   width: 400px;
 }
 
-a .navbar1 {
-  text-align: right;
-  background-color: white;
-  margin: 5px;
-  padding: 5px;
-  border-radius: 3px;
-  width: 120px;
-  text-align: center;
-}
 
 h5 {
   padding: 7px;
@@ -81,9 +75,20 @@ h5 {
   width: 600px;
   background-color: white;
   margin: auto;
-  padding: 10px;
+  padding: 30px;
   position: relative;
   top: 150px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px 1px rgba(255, 255, 255, 0.5);
+}
+
+.container2 {
+  width: 600px;
+  background-color: white;
+  margin: auto;
+  padding: 30px;
+  position: relative;
+  top: 400px;
   border-radius: 10px;
   box-shadow: 4px 4px 5px 1px rgba(255, 255, 255, 0.5);
 }
@@ -91,13 +96,22 @@ h5 {
 .fond{
   height: 1000px;
   background-size: cover;
-  background-image: url("https://lecafedufle.fr/wp-content/uploads/2013/02/theatre-fle-1.jpg");
+  background-image: url(https://images.squarespace-cdn.com/content/v1/588e59011b631b0e7cfd39a2/1491350411580-8BRYCZIX6MJIKQVK8DWK/MB1.jpg?format=2500w);
+  // background-image: url("https://lecafedufle.fr/wp-content/uploads/2013/02/theatre-fle-1.jpg");
+  image-rendering: grayscale(80%);
+}
+
+.fond2{
+  height: 1000px;
+  background-size: cover;
+  background-image: url(https://cdn5.vectorstock.com/i/1000x1000/10/04/cartoon-empty-template-cinema-hall-interior-inside-vector-28271004.jpg);
+  // background-image: url("https://lecafedufle.fr/wp-content/uploads/2013/02/theatre-fle-1.jpg");
   image-rendering: grayscale(80%);
 }
 
 li.nav-item{
   display: flex;
-  justify-content: flex-between;
+  justify-content: space-between;
 }
 
 .navbar-collapse {
@@ -108,4 +122,52 @@ li.nav-item{
 
 .navbar1 {
     text-align: right;
+}
+
+.cardimg{
+background-size: cover;
+width: 100%;
+
+image-rendering: grayscale(80%);
+filter: blur(5px)
+}
+
+h1{
+  margin-left: 900px;
+  margin-top: 50px;
+  font-size: 80px;
+}
+
+.banner2{
+  height: 600px;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: block;
+  background-image: url(https://www.jeunest.fr/wp-content/uploads/2021/02/salle-cinema-vide-%C2%A9-razihusin-stock.adobe_.com_-1920x1253.jpg);
+  // background-image: url("https://lecafedufle.fr/wp-content/uploads/2013/02/theatre-fle-1.jpg");
+  image-rendering: grayscale(80%);
+}
+
+.card-img-top{
+  height: 250px;
+  border-radius: 3px;
+  box-shadow: 4px 4px 5px rgba(2,2,0,0.2);
+
+}
+
+h2{
+text-align: center;
+color: white;
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+top:30%;
+text-align: center;
+text-shadow: 1px 1px 2px grey;
+font-size: 60px;
+font-family: Arial, Helvetica, sans-serif;
 }

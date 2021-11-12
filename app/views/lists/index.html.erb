@@ -6,24 +6,30 @@
 <div class="container py-5">
   <div class="d-flex align-items-center justify-content-between mb-3">
     <h3 class="mb-0">My Lists</h3>
-    <%= link_to 'Create a movie list', new_list_path, class: 'btn btn-flat' %>
+    <%= link_to 'Create a movie list', new_list_path, class: 'btn btn-primary' %>
   </div>
   <div class="row">
     <% @lists.each do |list| %>
       <div class="co-12 colsm-6 col-md-4">
-      <div>
         <%= link_to list_path(list) do %>
-            <%= list.name %>
+        <div class="card-category">
+            <h2><%= list.name %></h2>
             <% if list.photo.attached? %>
               <%= cl_image_tag list.photo.key, class:"card-img-top"  %>
             <% else %>
               <img class="card-img-top" src="https://lecafedufle.fr/wp-content/uploads/2013/02/theatre-fle-1.jpg">
             <% end %>
+        <%= link_to 'Remove', list, method: :delete, data: { confirm: 'Are you sure?' }  %>
           </div>
         <% end %>
-        <%= link_to 'Destroy', list, method: :delete, data: { confirm: 'Are you sure?' } %>
       </div>
     <% end %>
 
+  </div>
+</div>
+
+<div class="footer">
+  </div>
+  <div class="footer-copyright">
   </div>
 </div>
